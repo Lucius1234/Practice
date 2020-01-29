@@ -1,0 +1,111 @@
+* {margin:0;padding: 0;}
+ 
+body {
+    background-color: #272727;
+}
+ 
+h1 {
+    text-align: center;
+    color: #fff;
+    font-family: raleway;
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: 100;
+    letter-spacing: 12px;
+    border-bottom: 1px solid #bd281e;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: #bd281e;
+    text-shadow: 0 0 10px #bd281e, 0 0 20px #bd281e, 0 0 30px #bd281e, 0 0 40px #bd281e, 0 0 50px #bd281e, 0 0 60px #bd281e, 0 0 70px #bd281e;
+}
+ 
+.main-container {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+ 
+.btn-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height:180px;
+}
+ 
+.ct-btn {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer;
+    margin:20px;
+}
+ 
+
+button {
+    font-size: 20px;
+    width: 230px;
+    height: 80px;
+    border-radius: 4px;
+    cursor:pointer;
+    font-family: lato;
+}
+ 
+
+
+.inner-width-neon {
+    background-color: transparent;
+    border: 2px solid #bd281e;
+    color: #bd281e;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+ 
+    .inner-width-neon .bg-width {
+        background-color: #fff5a2;
+        position: absolute;
+        left: 50%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        width: 0%;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-transition: width .3s, left .3s;
+        transition: width .3s, left .3s;
+    }
+ 
+    .inner-width-neon .btn-text {
+        z-index: 1;
+    }
+ 
+.inner-width-neon:hover {
+    -webkit-box-shadow: 0px 0px 30px 20px #fff5a2;
+            box-shadow: 0px 0px 30px 20px #fff5a2;
+    border-color:#fff6a8;
+}
+ 
+.inner-width-neon:hover .bg-width {
+    width:100%;
+    left:0%;
+    z-index: -1;
+}
+ 
+.inner-width-neon:hover .btn-text {
+    color:#f50a0a
+}
+
